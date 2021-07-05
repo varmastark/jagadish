@@ -1,0 +1,44 @@
+git init
+git config --global user.name "varma"
+git config --global user.email "varmamandapalli@gmail.com"
+git config --list
+clear
+====================================================================
+git status
+git add file name = workspace to staging /index
+git status
+git commit -m "label" file name = staging/index to local repo
+git log
+git show cid
+git push = local repo to central repo
+================================================
+git reset HEAD file name = staging to workspace
+git reset --soft cid = local repo to staging
+git rest --mixed cid = local to workspace
+==============================================================
+github
+git clone https://github.com/varmastark/jagadish.git
+touch varma
+ls
+git status
+git add varma
+git commit -m "1st commit" varma
+git log
+git push
+=============================================================
+ll = long list 
+ls = short list
+===============================================================================================
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[remote "origin"]
+	url = https://github.com/varmastark/jagadish.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main
